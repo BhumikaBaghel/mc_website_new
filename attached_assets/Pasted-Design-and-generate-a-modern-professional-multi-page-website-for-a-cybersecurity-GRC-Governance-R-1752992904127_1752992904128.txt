@@ -1,0 +1,39 @@
+Design and generate a modern, professional multi-page website for a cybersecurity GRC (Governance, Risk, and Compliance) product company. The company offers both cybersecurity services and a dedicated product. Please follow these requirements:
+
+#### General Requirements
+- Website is for a company specializing in **cybersecurity GRC solutions**—consulting services and a cybersecurity product.
+- Use a color palette featuring **violet** and **rose** as primary theme colors throughout the website.
+- The design should be sleek, trustworthy, and technology-forward.
+- Ensure responsive layout for desktop and mobile views.
+
+#### Required Pages and Features
+- **Home Page:** Company overview, GRC approach, call to action.
+- **About Page:** Company mission, background, team highlights.
+- **Product Page:** Detailed section about the cybersecurity GRC product with notable features, screenshots (placeholder images), and customer benefits.
+- **Services Overview Page:** Brief overview of offered cybersecurity services.
+- **Service Detail Pages:**  
+   - Create an individual page for each major cybersecurity service (e.g., Risk Assessment, Compliance Management, Incident Response, Security Audits). Each page should detail the service, its benefits, and the expertise offered.
+- **Contact Page:** Contact form, business address, email, and phone.
+
+#### Style and UI
+- Use shades of **violet (purple)** for main backgrounds/headers and **rose (pinkish-red)** accents for highlights, buttons, and section dividers.
+- Consistent modern typography; use clean, easily readable fonts.
+- Include a top navigation menu and a prominent footer with contact/social links.
+- Integrate relevant icons or light illustrations to support each service.
+- Incorporate subtle hover effects and interactive elements for engagement.
+
+#### Example Directory Structure
+- `/` (Home)
+- `/about`
+- `/product`
+- `/services`
+- `/services/risk-assessment`
+- `/services/compliance-management`
+- `/services/incident-response`
+- `/services/security-audits`
+- `/contact`
+
+#### Additional Instructions
+- Use clearly separated components for navigation, page content, and the footer.
+- Place sample text and placeholder images where actual information or product screenshots would go.
+- You may use a JS framework like React, but plain HTML/CSS/JS is sufficient if preferred.
