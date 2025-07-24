@@ -1,6 +1,12 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Shield, BarChart3, Settings, CheckCircle } from "lucide-react";
+import bg_image from "../assets/banner_image_6.png";
+
+
+// A 'Compliance-as-a-Service' solution designed to simplify compliance.
+// Automate security and privacy compliance
+// Revolutionize your compliance management with our cutting-edge automation solution
 
 export default function Home() {
   return (
@@ -9,22 +15,28 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080" 
-            alt="Cybersecurity hero banner with digital security visualization" 
+          <img
+            src={bg_image}
+            alt="Cybersecurity hero banner with digital security visualization"
             className="w-full h-full object-cover"
           />
           <div className="hero-overlay absolute inset-0"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">
-              Secure. Compliant. Confident.
+          <h3 className="font-bold mb-6">
+            <span className="">
+              A 'Compliance-as-a-Service' solution designed to simplify
+              compliance.
             </span>
+          </h3>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+            Automate security and privacy compliance
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-slate-300 max-w-3xl mx-auto">
-            Leading cybersecurity GRC solutions that protect your business, ensure compliance, and drive growth through intelligent risk management.
+          <p className="text-xl md:text-xl mb-8 text-slate-300 max-w-3xl mx-auto">
+            Revolutionize your compliance management with our cutting-edge
+            automation solution. Streamline processes, reduce manual effort, and
+            ensure continuous compliance with industry standards.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/product">
@@ -33,7 +45,10 @@ export default function Home() {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" className="glass px-8 py-4 text-lg font-semibold hover:bg-white hover:bg-opacity-20 transition-all">
+              <Button
+                variant="outline"
+                className="glass px-8 py-4 text-lg font-semibold hover:bg-white hover:bg-opacity-20 transition-all"
+              >
                 Schedule Consultation
               </Button>
             </Link>
@@ -47,7 +62,8 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Why Choose CyberGRC?</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              We combine deep cybersecurity expertise with cutting-edge technology to deliver comprehensive GRC solutions.
+              We combine deep cybersecurity expertise with cutting-edge
+              technology to deliver comprehensive GRC solutions.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -55,27 +71,36 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center mb-6 mx-auto">
                 <Shield className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-center">Expert Guidance</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center">
+                Expert Guidance
+              </h3>
               <p className="text-slate-300 text-center">
-                Industry-leading cybersecurity professionals with decades of combined experience in GRC frameworks.
+                Industry-leading cybersecurity professionals with decades of
+                combined experience in GRC frameworks.
               </p>
             </div>
             <div className="service-card p-8 rounded-xl card-hover">
               <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center mb-6 mx-auto">
                 <BarChart3 className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-center">Integrated Platform</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center">
+                Integrated Platform
+              </h3>
               <p className="text-slate-300 text-center">
-                Unified GRC platform that streamlines governance, risk management, and compliance processes.
+                Unified GRC platform that streamlines governance, risk
+                management, and compliance processes.
               </p>
             </div>
             <div className="service-card p-8 rounded-xl card-hover">
               <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center mb-6 mx-auto">
                 <CheckCircle className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-center">Proven Results</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center">
+                Proven Results
+              </h3>
               <p className="text-slate-300 text-center">
-                Track record of helping organizations achieve and maintain compliance while reducing cyber risk.
+                Track record of helping organizations achieve and maintain
+                compliance while reducing cyber risk.
               </p>
             </div>
           </div>
@@ -87,9 +112,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern office technology with multiple monitors showing security dashboards" 
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                alt="Modern office technology with multiple monitors showing security dashboards"
                 className="rounded-xl shadow-2xl"
               />
             </div>
@@ -98,28 +123,41 @@ export default function Home() {
                 Our <span className="gradient-text">GRC Approach</span>
               </h2>
               <p className="text-xl text-slate-300 mb-8">
-                We believe in a holistic approach to cybersecurity governance, risk management, and compliance that adapts to your business needs and scales with your growth.
+                We believe in a holistic approach to cybersecurity governance,
+                risk management, and compliance that adapts to your business
+                needs and scales with your growth.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-gradient-to-br from-violet-500 to-rose-500 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
                     <h4 className="font-semibold mb-1">Risk-Based Framework</h4>
-                    <p className="text-slate-300">Prioritize resources based on actual risk exposure and business impact.</p>
+                    <p className="text-slate-300">
+                      Prioritize resources based on actual risk exposure and
+                      business impact.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-gradient-to-br from-violet-500 to-rose-500 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
-                    <h4 className="font-semibold mb-1">Continuous Monitoring</h4>
-                    <p className="text-slate-300">Real-time visibility into your security posture and compliance status.</p>
+                    <h4 className="font-semibold mb-1">
+                      Continuous Monitoring
+                    </h4>
+                    <p className="text-slate-300">
+                      Real-time visibility into your security posture and
+                      compliance status.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-gradient-to-br from-violet-500 to-rose-500 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
                     <h4 className="font-semibold mb-1">Automated Workflows</h4>
-                    <p className="text-slate-300">Streamline processes with intelligent automation and reporting.</p>
+                    <p className="text-slate-300">
+                      Streamline processes with intelligent automation and
+                      reporting.
+                    </p>
                   </div>
                 </div>
               </div>
