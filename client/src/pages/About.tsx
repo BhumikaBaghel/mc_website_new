@@ -33,7 +33,7 @@ export default function About() {
           <img
             src={mission_logo}
             alt="Mission Logo"
-            className="w-full rounded-lg"
+            className="w-full rounded-lg hidden md:block"
           />
           <div>
             <h1 className="text-3xl md:text-4xl font-bold text-white font-times mb-5">
@@ -56,6 +56,11 @@ export default function About() {
               an ever-evolving digital landscape.
             </p>
           </div>
+          <img
+            src={mission_logo}
+            alt="Mission Logo"
+            className="w-full rounded-lg md:hidden"
+          />
         </div>
 
         {/* Team Highlights */}
