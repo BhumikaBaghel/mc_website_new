@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Shield, BarChart3, Settings, CheckCircle } from "lucide-react";
 import bg_image from "../assets/banner_image_6.png";
-
+import StandardInfo from "./Standards";
 
 // A 'Compliance-as-a-Service' solution designed to simplify compliance.
 // Automate security and privacy compliance
@@ -109,61 +109,7 @@ export default function Home() {
 
       {/* GRC Approach Section */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Modern office technology with multiple monitors showing security dashboards"
-                className="rounded-xl shadow-2xl"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">
-                Our <span className="gradient-text">GRC Approach</span>
-              </h2>
-              <p className="text-xl text-slate-300 mb-8">
-                We believe in a holistic approach to cybersecurity governance,
-                risk management, and compliance that adapts to your business
-                needs and scales with your growth.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-violet-500 to-rose-500 rounded-full flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Risk-Based Framework</h4>
-                    <p className="text-slate-300">
-                      Prioritize resources based on actual risk exposure and
-                      business impact.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-violet-500 to-rose-500 rounded-full flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h4 className="font-semibold mb-1">
-                      Continuous Monitoring
-                    </h4>
-                    <p className="text-slate-300">
-                      Real-time visibility into your security posture and
-                      compliance status.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-gradient-to-br from-violet-500 to-rose-500 rounded-full flex-shrink-0 mt-1"></div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Automated Workflows</h4>
-                    <p className="text-slate-300">
-                      Streamline processes with intelligent automation and
-                      reporting.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <StandardInfo/>
       </section>
     </div>
   );
