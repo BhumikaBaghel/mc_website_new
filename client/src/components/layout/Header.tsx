@@ -57,7 +57,7 @@ export default function Header() {
               <li className={`nav-link cursor-pointer`}>
                 <Menu as="div" className="relative inline-block text-left">
                   <MenuButton className="hover:text-white">Services</MenuButton>
-                  <MenuItems className="absolute mt-2 w-fit bg-white shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
+                  <MenuItems className=" bg-[#1f1f1f] absolute mt-2 w-fit bg-white shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
                     <MenuItem>
                       {() => (
                         <Link
@@ -96,7 +96,7 @@ export default function Header() {
                   <MenuButton className="hover:text-white">
                     Solutions
                   </MenuButton>
-                  <MenuItems className="absolute mt-2 w-fit bg-white shadow-lg rounded z-50 p-4 flex flex-col space-y-3">
+                  <MenuItems className="bg-[#1f1f1f] absolute mt-2 w-fit bg-white shadow-lg rounded z-50 p-4 flex flex-col space-y-3">
                     <MenuItem>
                       {() => (
                         <Link
@@ -189,7 +189,7 @@ export default function Header() {
                     <MenuButton className="hover:text-white">
                       Services
                     </MenuButton>
-                    <MenuItems className="absolute mt-2 w-fit bg-[#1f1f1f] shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
+                    <MenuItems className="bg-[#1f1f1f] absolute mt-2 w-fit bg-[#1f1f1f] shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
                       <MenuItem>
                         {() => (
                           <Link

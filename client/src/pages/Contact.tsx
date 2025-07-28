@@ -70,7 +70,8 @@ export default function Contact() {
             Get In <span className="gradient-text">Touch</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Ready to strengthen your cybersecurity posture? Contact our experts for a consultation or to learn more about our services.
+            Ready to strengthen your cybersecurity posture? Contact our experts
+            for a consultation or to learn more about our services.
           </p>
         </div>
 
@@ -79,7 +80,10 @@ export default function Contact() {
           <div className="service-card p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-6"
+              >
                 <div className="grid md:grid-cols-2 gap-6">
                   <FormField
                     control={form.control}
@@ -88,7 +92,10 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel>First Name *</FormLabel>
                         <FormControl>
-                          <Input {...field} className="bg-slate-800 border-slate-600 focus:border-violet-500" />
+                          <Input
+                            {...field}
+                            className="bg-slate-800 border-slate-600 focus:border-violet-500"
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -101,7 +108,10 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel>Last Name *</FormLabel>
                         <FormControl>
-                          <Input {...field} className="bg-slate-800 border-slate-600 focus:border-violet-500" />
+                          <Input
+                            {...field}
+                            className="bg-slate-800 border-slate-600 focus:border-violet-500"
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -115,7 +125,11 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Email Address *</FormLabel>
                       <FormControl>
-                        <Input type="email" {...field} className="bg-slate-800 border-slate-600 focus:border-violet-500" />
+                        <Input
+                          type="email"
+                          {...field}
+                          className="bg-slate-800 border-slate-600 focus:border-violet-500"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -128,7 +142,10 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Company</FormLabel>
                       <FormControl>
-                        <Input {...field} className="bg-slate-800 border-slate-600 focus:border-violet-500" />
+                        <Input
+                          {...field}
+                          className="bg-slate-800 border-slate-600 focus:border-violet-500"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -140,18 +157,31 @@ export default function Contact() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Service Interest</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
                         <FormControl>
                           <SelectTrigger className="bg-slate-800 border-slate-600 focus:border-violet-500">
                             <SelectValue placeholder="Select a service" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="risk-assessment">Risk Assessment</SelectItem>
-                          <SelectItem value="compliance">Compliance Management</SelectItem>
-                          <SelectItem value="incident-response">Incident Response</SelectItem>
-                          <SelectItem value="security-audits">Security Audits</SelectItem>
-                          <SelectItem value="platform">CyberGRC Platform</SelectItem>
+                          <SelectItem value="risk-assessment">
+                            Risk Assessment
+                          </SelectItem>
+                          <SelectItem value="compliance">
+                            Compliance Management
+                          </SelectItem>
+                          <SelectItem value="incident-response">
+                            Incident Response
+                          </SelectItem>
+                          <SelectItem value="security-audits">
+                            Security Audits
+                          </SelectItem>
+                          <SelectItem value="platform">
+                            CyberGRC Platform
+                          </SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
@@ -166,8 +196,8 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Message *</FormLabel>
                       <FormControl>
-                        <Textarea 
-                          {...field} 
+                        <Textarea
+                          {...field}
                           rows={4}
                           placeholder="Tell us about your cybersecurity needs..."
                           className="bg-slate-800 border-slate-600 focus:border-violet-500"
@@ -177,8 +207,8 @@ export default function Contact() {
                     </FormItem>
                   )}
                 />
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   className="btn-primary w-full py-3 font-semibold"
                   disabled={submitContactForm.isPending}
                 >
@@ -191,14 +221,16 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="service-card p-6 rounded-xl">
-              <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+              <h3 className="text-xl font-semibold mb-4">
+                Contact Information
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="font-medium">contact@cybergrc.com</p>
+                    <p className="font-medium">enquiry@maxconformance.com</p>
                     <p className="text-slate-300 text-sm">General inquiries</p>
                   </div>
                 </div>
@@ -207,8 +239,12 @@ export default function Contact() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="font-medium">+1 (555) 123-CYBER</p>
-                    <p className="text-slate-300 text-sm">Business hours: M-F 9AM-6PM EST</p>
+                    <p className="font-medium">
+                      +91 7977121851 / +91 9789862971
+                    </p>
+                    <p className="text-slate-300 text-sm">
+                      Business hours: M-S 9AM-6PM IST
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -216,35 +252,46 @@ export default function Contact() {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="font-medium">123 Cyber Security Boulevard</p>
-                    <p className="text-slate-300 text-sm">Tech District, San Francisco, CA 94105</p>
+                    <p className="font-medium">Mumbai, India</p>
+ 
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="service-card p-6 rounded-xl">
+            {/* <div className="service-card p-6 rounded-xl">
               <h3 className="text-xl font-semibold mb-4">Emergency Response</h3>
               <div className="bg-red-900 bg-opacity-30 border border-red-500 rounded-lg p-4">
                 <div className="flex items-center space-x-3 mb-2">
                   <AlertTriangle className="w-6 h-6 text-red-400" />
-                  <span className="font-bold text-red-400">24/7 Incident Response</span>
+                  <span className="font-bold text-red-400">
+                    24/7 Incident Response
+                  </span>
                 </div>
                 <p className="text-sm mb-2">For cybersecurity emergencies</p>
                 <p className="font-bold text-lg">1-800-CYBER-911</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="service-card p-6 rounded-xl">
               <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center hover:scale-110 transition-transform"
+                >
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center hover:scale-110 transition-transform"
+                >
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gradient-to-br from-violet-500 to-rose-500 rounded-lg flex items-center justify-center hover:scale-110 transition-transform"
+                >
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>

@@ -60,7 +60,7 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Why Choose CyberGRC?</h2>
+            <h2 className="text-4xl font-bold mb-6">Why Choose Max Conformance?</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               We combine deep cybersecurity expertise with cutting-edge
               technology to deliver comprehensive GRC solutions.
