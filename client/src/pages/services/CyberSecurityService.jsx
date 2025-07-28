@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import cybersecurity_logo from "@/assets/cybersecurity/cybersecuity.svg";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 const cybersecurityFeatures = [
   {
@@ -176,11 +178,11 @@ export default function CRM() {
               Let us help you build a resilient cybersecurity program tailored
               to your risk profile.
             </p>
-            {/* <Link href="/contact">
+            <Link href="/contact">
               <Button className="btn-primary px-8 py-3 font-semibold">
                 Talk to a Security Advisor
               </Button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

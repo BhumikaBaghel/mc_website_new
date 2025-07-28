@@ -1,6 +1,8 @@
 import React from "react";
 import strategic_planning_logo from "@/assets/strategic_planning/strategic_planning.svg";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 
 const consultingFeatures = [
@@ -133,11 +135,11 @@ function CRM() {
               Partner with us to design forward-thinking IT solutions and
               execute with clarity.
             </p>
-            {/* <Link to="/contact">
+            <Link to="/contact">
               <Button className="btn-primary px-8 py-3 font-semibold">
                 Schedule a Strategy Session
               </Button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

@@ -5,8 +5,9 @@ import thirdPartyIcon from "@/assets/privacy_manager/third-party.png";
 import lineageIcon from "@/assets/privacy_manager/lineage.png";
 import analysisIcon from "@/assets/privacy_manager/analysis.png";
 import mappingIcon from "@/assets/privacy_manager/mapping.png";
-import { Link } from "react-router-dom";
 import {motion } from "framer-motion";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 const privacyFeatures = [
   {
@@ -80,7 +81,7 @@ export default function PrivacyManager() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-green-700 to-blue-400 bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold gradient-text">
               Privacy Manager Solutions
             </h2>
             <p className="text-2xl font-semibold text-white">
@@ -135,11 +136,11 @@ export default function PrivacyManager() {
               See how our Privacy Manager can help your organization streamline
               governance and data protection.
             </p>
-            {/* <Link to="/contact">
+            <Link to="/contact">
               <Button className="btn-primary px-8 py-3 font-semibold">
                 Request a Demo
               </Button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

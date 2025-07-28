@@ -61,7 +61,7 @@ export default function Footer() {
               <li>
                 <Link href="/services/strategic_planning_service">
                   <span className="text-slate-300 hover:text-violet-400 transition-colors cursor-pointer">
-                    Strategic Planning & Consulting
+                    Strategic Technology Consulting
                   </span>
                 </Link>
               </li>

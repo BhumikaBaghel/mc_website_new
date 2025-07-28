@@ -165,8 +165,12 @@
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, hsl(263, 70%, 50%), hsl(349, 89%, 60%));
-  -webkit-background-clip: text;
+  background: linear-gradient(
+    135deg,
+    hsl(50, 100%, 85%),   /* soft yellow */
+    hsl(180, 100%, 85%),  /* light cyan */
+    hsl(300, 100%, 85%)   /* pastel magenta */
+  );  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import crm_logo from "@/assets/crm/cloud-risk-1.png";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 const cloudComplianceFeatures = [
   {
@@ -97,7 +99,7 @@ export default function CRM() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold bg-gradient-to-r from-red-500 to-blue-500 gradient-text">
               Cloud Risk Management Solution
             </h1>
             <p className="text-2xl font-semibold text-white">
@@ -145,11 +147,11 @@ export default function CRM() {
               Discover how our platform helps you manage risk and maintain
               compliance effortlessly.
             </p>
-            {/* <Link to="/contact">
+            <Link to="/contact">
               <Button className="btn-primary px-8 py-3 font-semibold">
                 Talk to an Expert
               </Button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

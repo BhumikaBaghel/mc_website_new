@@ -4,9 +4,6 @@ import { Shield, BarChart3, Settings, CheckCircle } from "lucide-react";
 import bg_image from "../assets/banner_image_6.png";
 import StandardInfo from "./Standards";
 
-// A 'Compliance-as-a-Service' solution designed to simplify compliance.
-// Automate security and privacy compliance
-// Revolutionize your compliance management with our cutting-edge automation solution
 
 export default function Home() {
   return (
@@ -14,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 opacity-30">
           <img
             src={bg_image}
             alt="Cybersecurity hero banner with digital security visualization"
@@ -23,7 +20,7 @@ export default function Home() {
           <div className="hero-overlay absolute inset-0"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center ">
           <h3 className="font-bold mb-6">
             <span className="">
               A 'Compliance-as-a-Service' solution designed to simplify
@@ -39,7 +36,7 @@ export default function Home() {
             ensure continuous compliance with industry standards.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/product">
+            <Link href="/governance_risk_and_compliance">
               <Button className="btn-primary px-8 py-4 text-lg font-semibold">
                 Explore Our Platform
               </Button>

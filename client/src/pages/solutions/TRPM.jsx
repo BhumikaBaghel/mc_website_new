@@ -14,7 +14,8 @@ import shield from "@/assets/tprm/shield.png";
 import timeToMarket from "@/assets/tprm/time-to-market (1).png";
 import warning from "@/assets/tprm/warning.png";
 import { motion } from "framer-motion";
-
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 const vendorRiskFeatures = [
   {
@@ -108,7 +109,7 @@ export default function TPRM() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl font-extrabold bg-gradient-to-r from-red-600 via-pink-500 to-blue-300 bg-clip-text text-transparent">
+            <h1 className="text-5xl font-extrabold gradient-text">
               Third Party Risk Management Solution
             </h1>
             <p className="text-2xl font-semibold text-white">
@@ -168,11 +169,11 @@ export default function TPRM() {
               Discover how our platform helps streamline vendor assessments and
               elevate trust.
             </p>
-            {/* <Link to="/contact">
+            <Link to="/contact">
               <Button className="btn-primary px-8 py-3 font-semibold">
                 Request a Demo
               </Button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

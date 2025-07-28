@@ -57,12 +57,12 @@ export default function Header() {
               <li className={`nav-link cursor-pointer`}>
                 <Menu as="div" className="relative inline-block text-left">
                   <MenuButton className="hover:text-white">Services</MenuButton>
-                  <MenuItems className=" bg-[#1f1f1f] absolute mt-2 w-fit bg-white shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
+                  <MenuItems className="bg-blue-950 absolute mt-2 w-fit bg-white shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
                     <MenuItem>
                       {() => (
                         <Link
                           to="/governance_risk_and_compliance"
-                          className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          className="text-sm font-bold whitespace-nowrap hover:text-white"
                         >
                           Governance Risk and Compliance
                         </Link>
@@ -72,7 +72,7 @@ export default function Header() {
                       {() => (
                         <Link
                           to="/cybersecurity_service"
-                          className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          className="text-sm font-bold whitespace-nowrap hover:text-white"
                         >
                           Cybersecurity
                         </Link>
@@ -82,7 +82,7 @@ export default function Header() {
                       {() => (
                         <Link
                           to="/strategic_planning_service"
-                          className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          className="text-sm font-bold whitespace-nowrap hover:text-white"
                         >
                           Strategic Technology Consulting
                         </Link>
@@ -96,12 +96,12 @@ export default function Header() {
                   <MenuButton className="hover:text-white">
                     Solutions
                   </MenuButton>
-                  <MenuItems className="bg-[#1f1f1f] absolute mt-2 w-fit bg-white shadow-lg rounded z-50 p-4 flex flex-col space-y-3">
+                  <MenuItems className="bg-blue-950 absolute mt-2 w-fit bg-white shadow-lg rounded z-50 p-4 flex flex-col space-y-3">
                     <MenuItem>
                       {() => (
                         <Link
                           to="/cloud_risk_management"
-                          className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          className="text-sm font-bold whitespace-nowrap hover:text-white"
                         >
                           Cloud Risk Managment
                         </Link>
@@ -110,7 +110,7 @@ export default function Header() {
                     <MenuItem>
                       <Link
                         to="/third_party_risk_management"
-                        className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                        className="text-sm font-bold whitespace-nowrap hover:text-white"
                       >
                         Third Party Risk Management
                       </Link>
@@ -118,7 +118,7 @@ export default function Header() {
                     <MenuItem>
                       <Link
                         to="/governance_risk_and_compliance"
-                        className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                        className="text-sm font-bold whitespace-nowrap hover:text-white"
                       >
                         GRC
                       </Link>
@@ -126,7 +126,7 @@ export default function Header() {
                     <MenuItem>
                       <Link
                         to="/privacy_manager"
-                        className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                        className="text-sm font-bold whitespace-nowrap hover:text-white"
                       >
                         Privacy Manager
                       </Link>

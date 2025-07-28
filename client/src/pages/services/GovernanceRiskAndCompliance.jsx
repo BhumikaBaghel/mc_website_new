@@ -1,6 +1,9 @@
 import React from "react";
 import Risk from "@/assets/grc/risk.png";
 import benefits from "@/assets/grc/benefits.png";
+import {Link } from "wouter";
+import {Button} from "@/components/ui/button";
+
 
 const featuresList = [
   {
@@ -189,11 +192,11 @@ return (
             Let our experts tailor a solution that aligns with your goals and
             accelerates compliance.
           </p>
-          {/* <Link href="/contact">
+          <Link href="/contact">
             <Button className="btn-primary px-8 py-3 font-semibold">
               Request a GRC Demo
             </Button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>
