@@ -161,7 +161,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 glass">
-              {navItems.map((item) => (
+              {/* {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
                   <div
                     className={`nav-link block px-3 py-2 cursor-pointer ${
@@ -172,7 +172,106 @@ export default function Header() {
                     {item.label}
                   </div>
                 </Link>
-              ))}
+              ))} */}{" "}
+              <ul className="flex flex-col pr-4 font-bold text-pink-500">
+                <li className={`nav-link px-3 py-2 cursor-pointer`}>
+                  <Link to="/" className="hover:text-white">
+                    Home
+                  </Link>
+                </li>
+                <li className={`nav-link px-3 py-2 cursor-pointer`}>
+                  <Link to="/about" className="hover:text-white">
+                    About
+                  </Link>
+                </li>
+                <li className={`nav-link px-3 py-2 cursor-pointer`}>
+                  <Menu as="div" className="relative inline-block text-left">
+                    <MenuButton className="hover:text-white">
+                      Services
+                    </MenuButton>
+                    <MenuItems className="absolute mt-2 w-fit bg-[#1f1f1f] shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
+                      <MenuItem>
+                        {() => (
+                          <Link
+                            to="/governance_risk_and_compliance"
+                            className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          >
+                            Governance Risk and Compliance
+                          </Link>
+                        )}
+                      </MenuItem>
+                      <MenuItem>
+                        {() => (
+                          <Link
+                            to="/cybersecurity_service"
+                            className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          >
+                            Cybersecurity
+                          </Link>
+                        )}
+                      </MenuItem>{" "}
+                      <MenuItem>
+                        {() => (
+                          <Link
+                            to="/strategic_planning_service"
+                            className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          >
+                            Strategic Technology Consulting
+                          </Link>
+                        )}
+                      </MenuItem>
+                    </MenuItems>
+                  </Menu>
+                </li>
+                <li className={`nav-link px-3 py-2 cursor-pointer`}>
+                  <Menu as="div" className="relative inline-block text-left">
+                    <MenuButton className="hover:text-white">
+                      Solutions
+                    </MenuButton>
+                    <MenuItems className="absolute mt-2 w-fit bg-[#1f1f1f] shadow-lg rounded z-50 p-4 flex flex-col space-y-3">
+                      <MenuItem>
+                        {() => (
+                          <Link
+                            to="/cloud_risk_management"
+                            className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                          >
+                            Cloud Risk Managment
+                          </Link>
+                        )}
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          to="/third_party_risk_management"
+                          className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                        >
+                          Third Party Risk Management
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          to="/governance_risk_and_compliance"
+                          className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                        >
+                          GRC
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          to="/privacy_manager"
+                          className="text-sm font-bold whitespace-nowrap hover:text-pink-500"
+                        >
+                          Privacy Manager
+                        </Link>
+                      </MenuItem>
+                    </MenuItems>
+                  </Menu>
+                </li>
+                <li className={`nav-link px-3 py-2 cursor-pointer`}>
+                  <Link to="/contact" className="hover:text-whitea">
+                    Contact us
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         )}
