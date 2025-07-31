@@ -157,7 +157,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 glass">
-              <ul className="flex flex-col pr-4 font-bold text-pink-500">
+              <ul className="flex flex-col pr-4 font-bold text-pink-600">
                 <li className="nav-link px-3 py-2 cursor-pointer">
                   <Link
                     to="/"
@@ -181,7 +181,7 @@ export default function Header() {
                     <MenuButton className="hover:text-white">
                       Services
                     </MenuButton>
-                    <MenuItems className="bg-[#1f1f1f] absolute mt-2 w-fit shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
+                    <MenuItems className="bg-pink-100 dark:bg-[#1f1f1f] absolute mt-2 w-fit shadow-lg flex flex-col space-y-3 rounded z-50 p-4">
                       <MenuItem>
                         {() => (
                           <Link
@@ -223,7 +223,7 @@ export default function Header() {
                     <MenuButton className="hover:text-white">
                       Solutions
                     </MenuButton>
-                    <MenuItems className="absolute mt-2 w-fit bg-[#1f1f1f] shadow-lg rounded z-50 p-4 flex flex-col space-y-3">
+                    <MenuItems className="bg-pink-100 dark:bg-[#1f1f1f] absolute mt-2 w-fit bg-[#1f1f1f] shadow-lg rounded z-50 p-4 flex flex-col space-y-3">
                       <MenuItem>
                         {() => (
                           <Link
