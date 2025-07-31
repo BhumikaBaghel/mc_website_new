@@ -104,9 +104,9 @@
 }
 
 .glass-header.scrolled {
-  background: rgba(15, 15, 35, 0.5);
-  backdrop-filter: blur(10px);
-}
+  background: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);}
 
 /* Navigation effects */
 .nav-link {
