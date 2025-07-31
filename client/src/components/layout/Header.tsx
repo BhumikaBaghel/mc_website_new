@@ -33,7 +33,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <ul className="hidden md:flex items-center space-x-6 pr-4 font-bold text-pink-500">
+            <ul className="hidden md:flex items-center space-x-6 pr-4 font-bold text-white">
               <li className="nav-link cursor-pointer">
                 <Link to="/" className="hover:text-white">
                   Home
