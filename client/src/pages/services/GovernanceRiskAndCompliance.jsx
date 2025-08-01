@@ -3,6 +3,7 @@ import Risk from "@/assets/grc/risk.png";
 import benefits from "@/assets/grc/benefits.png";
 import {Link } from "wouter";
 import {Button} from "@/components/ui/button";
+import {motion} from "framer-motion";
 
 
 const featuresList = [
@@ -136,18 +137,29 @@ return (
           Tailored GRC Features
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {featuresList.map((feature, idx) => (
-            <div
-              key={idx}
-              className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-pink-700/30 group hover:bg-opacity-20 hover:scale-[1.03] transition-all duration-300"
+          {featuresList.map((feature, index) => (
+            <motion.div
+              key={index}
+              className="bg-gradient-to-br from-blue-100 to-green-100 text-black rounded-2xl p-8 
+             shadow-[0_10px_20px_rgba(0,255,255,0.1)] 
+             hover:shadow-[0_12px_24px_rgba(0,255,180,0.2)] 
+             transition hover:scale-[1.03] duration-300 ease-in-out 
+             flex flex-col items-center text-center space-y-4"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.05, duration: 0.4 }}
             >
-              <h3 className="text-xl font-semibold text-pink-400 mb-3 group-hover:text-white transition">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-gray-300 group-hover:text-white">
-                {feature.description}
-              </p>
-            </div>
+              <div className="bg-gradient-to-tr from-red-200 to-green-200 rounded-full p-3">
+                <img
+                  src={feature.logo}
+                  alt={feature.title}
+                  className="w-10 h-10"
+                />
+              </div>
+              <h3 className="text-xl font-bold">{feature.title}</h3>
+              <h4 className="font-semibold italic">{feature.subtitle}</h4>
+              <p className="text-sm">{feature.description}</p>
+            </motion.div>
           ))}
         </div>
       </div>

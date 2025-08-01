@@ -122,16 +122,25 @@ export default function CRM() {
             {cloudComplianceFeatures.map((feature, index) => (
               <motion.div
                 key={index}
-                className="rounded-2xl p-6 bg-white/5 border border-white/10 shadow-xl backdrop-blur-md transition hover:scale-[1.03] hover:shadow-blue-500/30"
+                className="bg-gradient-to-br from-blue-100 to-green-100 text-black rounded-2xl p-8 
+             shadow-[0_10px_20px_rgba(0,255,255,0.1)] 
+             hover:shadow-[0_12px_24px_rgba(0,255,180,0.2)] 
+             transition hover:scale-[1.03] duration-300 ease-in-out 
+             flex flex-col items-center text-center space-y-4"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                viewport={{ once: true }}
               >
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {feature.subtitle}
-                </h3>
-                <p className="text-sm text-gray-300">{feature.description}</p>
+                <div className="bg-gradient-to-tr from-red-200 to-green-200 rounded-full p-3">
+                  <img
+                    src={feature.logo}
+                    alt={feature.title}
+                    className="w-10 h-10"
+                  />
+                </div>
+                <h3 className="text-xl font-bold">{feature.title}</h3>
+                <h4 className="font-semibold italic">{feature.subtitle}</h4>
+                <p className="text-sm">{feature.description}</p>
               </motion.div>
             ))}
           </div>
